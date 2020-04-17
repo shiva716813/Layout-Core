@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@functions {
+
+    public class MyClass
+    {
+        public static string HiMvc()
+        {
+            return "Hello MVC";
+        }
+    }
+}
+
+<p>
+    @MyClass.HiMvc()
+</p>
+
+@section Header{ 
+    Shiva
+}
+
+@section Footer{ 
+    Ramezanian
+}

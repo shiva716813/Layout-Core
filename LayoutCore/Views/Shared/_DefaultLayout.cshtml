@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/Content/css/bootstrap-rtl.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container" style="direction:ltr">
+        <div class="row" style="background-color:antiquewhite">
+            @RenderSection("Header", false)
+        </div>
+        <div class="row">
+            @RenderBody()
+        </div>
+        <div class="row" style="background-color:azure">
+            @RenderSection("Footer", false)
+        </div>
+    </div>
+</body>
+</html>
